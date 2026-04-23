@@ -19,7 +19,14 @@ ROLLER is a fast and efficient tensor compilation system for deep learning workl
 
 ## B. Installation
 
-- This implementation requires ​​TVM 0.21 or newer​​. Please install the latest version of TVM following the official [installation guide](https://tvm.apache.org/docs/install/index.html).
+- ~~This implementation requires TVM 0.21 or newer. Please install the latest version of TVM following the official [installation guide](https://tvm.apache.org/docs/install/index.html).~~
+- This implementation requires TVM 0.21+. The specific commit hash used in my build is `d4e7bd3e19a4c786a7b737abea8cad7c3a5a95df`.
+
+  > **<ins>Important Note</ins>**: The latest TVM version has undergone significant changes and may no longer be compatible. To avoid potential errors, please use the exact commit below to install TVM from source:
+  > ```bash
+  > git checkout d4e7bd3e19a4c786a7b737abea8cad7c3a5a95df
+  > ```
+  > Then, you can follow the official [installation guide](https://github.com/apache/tvm/blob/d4e7bd3e19a4c786a7b737abea8cad7c3a5a95df/docs/install/from_source.rst) corresponding to **this commit** to continue the installation.
 
 ## C. Usage
 
